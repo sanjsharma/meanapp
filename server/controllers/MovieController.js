@@ -6,7 +6,7 @@ module.exports = function(app, route){
 	var rest = restful.model(
 			'movie',
 			app.models.movie
-		).methods(['get', 'put', 'post', 'delete ']);
+		).methods(['get', 'put', 'post', 'delete']);
 
 	// Register this endpoints with the application.
 	rest.register(app, route);
