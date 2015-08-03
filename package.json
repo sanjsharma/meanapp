@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "~4.13.3",
+    "mongoose": "~3.8.34",
+    "node-restful": "~0.1.18",
+    "method-override": "~2.3.5",
+    "body-parser": "~1.13.3",
+    "lodash": "~3.10.0"
+  }
 }
