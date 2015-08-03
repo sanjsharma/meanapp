@@ -29,7 +29,7 @@ mongoose.connection.once('open', function(){
 
 	//Load the routes.
 	var routes = require('./routes');
-	_.each(routes, fucntion(controller, route){
+	_.each(routes, function(controller, route){
 		app.use(route, controller(app, route));
 	});
 

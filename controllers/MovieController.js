@@ -12,7 +12,7 @@ module.exports = function(app, route){
 	rest.register(app, route);
 
 	//Return middleware ..
-	return fuction(req, res, next){
+	return function(req, res, next){
 		next();
 	};
 };
