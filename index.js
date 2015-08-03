@@ -23,7 +23,7 @@ app.use(function(req, res, next){
 //Connect to MongoDB
 mongoose.connect('mongodb://127.0.0.1/meanapp');
 mongoose.connection.once('open', function(){
-	
+	 
 	//Load the models.
 	app.models = require('./models/index');
 
