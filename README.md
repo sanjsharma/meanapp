@@ -21,8 +21,10 @@ compass
 7) cd meanapp/server 
 8) npm install
 9) run 'node index.js', this should show server responding on port 3000 
-10) download postman client 
-11) Add some data any try out some crud operations. 
-  - api format :
-  a) List:: http://localhost:3000/movie
-  b) Add:: 
+
+
+10) cd meanapp/client
+11) npm install
+12) bower install
+13) grunt serve , which should open localhost:9000 in your browser
+14) Enjoy your CRUD movie MEAN application. Cheers !!!
