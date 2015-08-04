@@ -66,4 +66,18 @@ angular
   })
   .factory('Movie', function(MovieRestangular) {
     return MovieRestangular.service('movie');
+  })
+  .directive('youtube', function() {
+    return {
+      restrict: 'E',
+      scope: {
+        src: '='
+      },
+      templateUrl: 'views/youtube.html'
+    };
+  })
+  .filter('trusted', function ($sce) {
+    return function(url) {
+      return $sce.trustAsResourceUrl(url);
+    };
   });
